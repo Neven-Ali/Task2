@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import SignupForm from "./Components/SignupForm";
 //-------------Pages
 import HomePage from "./Pages/HomePage";
 import Login from "./Pages/Login";
@@ -27,6 +27,8 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
+      <SignupForm/>
+
     </div>
   );
 }
